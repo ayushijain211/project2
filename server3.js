@@ -1,7 +1,6 @@
 const express=require('express')
 const app=express()
-app.get('/username',function(req,res){
-    console.log("server has started");
+app.get('/profile/:username',function(req,res){
     res.send(' the profile  is of ${req.params.username}')
 })
 app.listen(8086)
